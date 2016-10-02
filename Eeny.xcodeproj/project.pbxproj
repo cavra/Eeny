@@ -7,25 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5097EC043E8813DC4B2FE1F3 /* Pods_Eeny.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD5FADA10C419C24A72F85B7 /* Pods_Eeny.framework */; };
 		E555996B1DA04E4E00647BE8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E555996A1DA04E4E00647BE8 /* AppDelegate.swift */; };
 		E55599701DA04E4E00647BE8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E555996E1DA04E4E00647BE8 /* Main.storyboard */; };
 		E55599721DA04E4E00647BE8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E55599711DA04E4E00647BE8 /* Assets.xcassets */; };
 		E55599751DA04E4E00647BE8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E55599731DA04E4E00647BE8 /* LaunchScreen.storyboard */; };
 		E555997E1DA0547900647BE8 /* OptionCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E555997D1DA0547900647BE8 /* OptionCollectionViewCell.swift */; };
 		E55599831DA063CF00647BE8 /* OptionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E55599821DA063CF00647BE8 /* OptionsViewController.swift */; };
-		E55599891DA0A7E300647BE8 /* resultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E55599881DA0A7E300647BE8 /* resultViewController.swift */; };
+		E55599891DA0A7E300647BE8 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E55599881DA0A7E300647BE8 /* ResultViewController.swift */; };
+		E555998B1DA0B0D700647BE8 /* RestaurantsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E555998A1DA0B0D700647BE8 /* RestaurantsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		983F89026B4DD7BBC5938A46 /* Pods-Eeny.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Eeny.release.xcconfig"; path = "Pods/Target Support Files/Pods-Eeny/Pods-Eeny.release.xcconfig"; sourceTree = "<group>"; };
+		DD5FADA10C419C24A72F85B7 /* Pods_Eeny.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Eeny.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E55599671DA04E4E00647BE8 /* Eeny.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Eeny.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E555996A1DA04E4E00647BE8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E555996F1DA04E4E00647BE8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E55599711DA04E4E00647BE8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E55599741DA04E4E00647BE8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E55599761DA04E4E00647BE8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E555997D1DA0547900647BE8 /* OptionCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OptionCollectionViewCell.swift; path = ../OptionCollectionViewCell.swift; sourceTree = "<group>"; };
+		E555997D1DA0547900647BE8 /* OptionCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OptionCollectionViewCell.swift; sourceTree = "<group>"; };
 		E55599821DA063CF00647BE8 /* OptionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OptionsViewController.swift; sourceTree = "<group>"; };
-		E55599881DA0A7E300647BE8 /* resultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = resultViewController.swift; sourceTree = "<group>"; };
+		E55599881DA0A7E300647BE8 /* ResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
+		E555998A1DA0B0D700647BE8 /* RestaurantsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestaurantsViewController.swift; sourceTree = "<group>"; };
+		FB79C2882EC2303C7E423BD5 /* Pods-Eeny.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Eeny.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Eeny/Pods-Eeny.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +39,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5097EC043E8813DC4B2FE1F3 /* Pods_Eeny.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B9351088641905D8F513C99A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FB79C2882EC2303C7E423BD5 /* Pods-Eeny.debug.xcconfig */,
+				983F89026B4DD7BBC5938A46 /* Pods-Eeny.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		E555995E1DA04E4E00647BE8 = {
 			isa = PBXGroup;
 			children = (
 				E55599691DA04E4E00647BE8 /* Eeny */,
 				E55599681DA04E4E00647BE8 /* Products */,
+				B9351088641905D8F513C99A /* Pods */,
+				F34229D3F1A75FD0C32C1DF5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -73,7 +91,8 @@
 			isa = PBXGroup;
 			children = (
 				E55599821DA063CF00647BE8 /* OptionsViewController.swift */,
-				E55599881DA0A7E300647BE8 /* resultViewController.swift */,
+				E55599881DA0A7E300647BE8 /* ResultViewController.swift */,
+				E555998A1DA0B0D700647BE8 /* RestaurantsViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -86,6 +105,14 @@
 			name = Views;
 			sourceTree = "<group>";
 		};
+		F34229D3F1A75FD0C32C1DF5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DD5FADA10C419C24A72F85B7 /* Pods_Eeny.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -93,9 +120,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E55599791DA04E4E00647BE8 /* Build configuration list for PBXNativeTarget "Eeny" */;
 			buildPhases = (
+				9EA61D656AD42F2D577C9858 /* Check Pods Manifest.lock */,
 				E55599631DA04E4E00647BE8 /* Sources */,
 				E55599641DA04E4E00647BE8 /* Frameworks */,
 				E55599651DA04E4E00647BE8 /* Resources */,
+				EFDE7D94C6CE180204B97338 /* Embed Pods Frameworks */,
+				FE52F43B3BE71D578F3D63DE /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -154,6 +184,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		9EA61D656AD42F2D577C9858 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		EFDE7D94C6CE180204B97338 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Eeny/Pods-Eeny-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FE52F43B3BE71D578F3D63DE /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Eeny/Pods-Eeny-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		E55599631DA04E4E00647BE8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -162,7 +240,8 @@
 				E55599831DA063CF00647BE8 /* OptionsViewController.swift in Sources */,
 				E555996B1DA04E4E00647BE8 /* AppDelegate.swift in Sources */,
 				E555997E1DA0547900647BE8 /* OptionCollectionViewCell.swift in Sources */,
-				E55599891DA0A7E300647BE8 /* resultViewController.swift in Sources */,
+				E555998B1DA0B0D700647BE8 /* RestaurantsViewController.swift in Sources */,
+				E55599891DA0A7E300647BE8 /* ResultViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,6 +360,7 @@
 		};
 		E555997A1DA04E4E00647BE8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FB79C2882EC2303C7E423BD5 /* Pods-Eeny.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = RCAXPTGC96;
@@ -294,6 +374,7 @@
 		};
 		E555997B1DA04E4E00647BE8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 983F89026B4DD7BBC5938A46 /* Pods-Eeny.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = RCAXPTGC96;
@@ -324,6 +405,7 @@
 				E555997B1DA04E4E00647BE8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

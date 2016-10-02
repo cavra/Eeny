@@ -26,9 +26,9 @@ class OptionsViewController: UIViewController, UICollectionViewDataSource, UICol
 
         optionCollectionView.dataSource = self
         optionCollectionView.delegate = self
-        addOptionView.isHidden = true
-        self.choiceTextField.delegate = self
+        choiceTextField.delegate = self
 
+        addOptionView.isHidden = true
     }
 
     override func didReceiveMemoryWarning() {
@@ -37,7 +37,7 @@ class OptionsViewController: UIViewController, UICollectionViewDataSource, UICol
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: IndexPath) -> CGSize {
-        let dim = (collectionView.frame.width / 2) - 0.5
+        let dim = (collectionView.frame.width / 2) - 12
        
         return CGSize(width: dim, height: dim)
     }
@@ -61,15 +61,7 @@ class OptionsViewController: UIViewController, UICollectionViewDataSource, UICol
         else {
             cell.backgroundColor = UIColor.gray
             cell.inputLabel.text = "Tap to add a choice!"
-            print("Tap to add a choice!")
         }
-        
-        // A bit of cell formatting
-        cell.layer.cornerRadius = 10
-        cell.clipsToBounds = true
-        cell.layer.shadowOffset = CGSize(width: 1, height: 1)
-        cell.layer.shadowOpacity = 1
-        cell.layer.shadowRadius = 4
         
         return cell
     }
@@ -81,11 +73,16 @@ class OptionsViewController: UIViewController, UICollectionViewDataSource, UICol
     }
     
     func dismissKeyboardOnTap(_ sender: UITapGestureRecognizer? = nil) {
-        if self.choiceTextField.text?.isEmpty ?? true {
-            self.optionsArray.insert("Failure", at: currentIndex)
+        if (self.choiceTextField.text == "") {
+            if(currentIndex == optionsArray.count){
+                self.optionsArray.insert("Failure", at: currentIndex)
+                self.colorsArray.insert(getRandomColor(), at: currentIndex)
+            }
+            else{
+                self.optionsArray[currentIndex] = "Failure"
+            }
         }
         else{
-            print(optionsArray.count)
             if(currentIndex == optionsArray.count){
                 self.optionsArray.insert(choiceTextField.text!, at: currentIndex)
                 self.colorsArray.insert(getRandomColor(), at: currentIndex)
@@ -107,19 +104,16 @@ class OptionsViewController: UIViewController, UICollectionViewDataSource, UICol
     }
   
     func getRandomColor() -> UIColor{
-        
         let randomRed:CGFloat = CGFloat(drand48())
-        
         let randomGreen:CGFloat = CGFloat(drand48())
-        
         let randomBlue:CGFloat = CGFloat(drand48())
         
         return UIColor(red: randomRed, green: randomGreen, blue: randomBlue, alpha: 1.0)
-        
     }
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if(segue.identifier == "resultSegue"){
-            let viewController:resultViewController = segue.destination as! resultViewController
+            let viewController:ResultViewController = segue.destination as! ResultViewController
             
             if (optionsArray.count == 0){
                 viewController.results = "Enter some values!"
@@ -131,7 +125,5 @@ class OptionsViewController: UIViewController, UICollectionViewDataSource, UICol
             }
         }
     }
-  
-
 }
 
