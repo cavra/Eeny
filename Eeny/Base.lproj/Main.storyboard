@@ -172,7 +172,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="DHf-03-oFp" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="My Choices" id="eXJ-gW-Jf3"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="Ydn-bP-iVH">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Ydn-bP-iVH">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -210,7 +210,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="SMQ-W6-gMt" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Nearby Resaurants" id="IeC-7m-mpx"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="8oj-Jb-Qqi">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="8oj-Jb-Qqi">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
